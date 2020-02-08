@@ -1,4 +1,4 @@
-      # Welcome to Jekyll!
+# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -13,10 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: TheCryptoWriter
+title: "The Crypto Writer"
 email: davidmcneal28@gmail.com
 description: The Crypto Writer's Site # this means to ignore newlines until "baseurl:"
-
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://davidmcneal28.github.io/thecryptowriter/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thecryptowriter
@@ -24,18 +23,65 @@ github_username:  davidmcneal28
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: 
 plugins:
   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
- exclude:
-   - Gemfile
-   - Gemfile.lock
-   - node_modules
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+collections_dir: _collections
+
+collections:
+name: 'authors'
+  label: 'Authors'
+  folder: '_authors/'
+  create: true
+  editor:
+    preview: false
+  fields:
+    { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
+    { label: 'Short Name', name: 'name', widget: 'string' }
+    { label: 'Diplay Name', name: 'display_name', widget: 'string' }
+    { label: 'Position', name: 'position', widget: 'string' }
+    { label: 'Body', name: 'body', widget: 'markdown' }
+
+  name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      { label: 'Title', name: 'title', widget: 'string' }
+      { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'authors',
+          displayFields: [display_name],
+          searchFields: [display_name],
+          valueField: 'name',
+      }
+      { label: 'Body', name: 'body', widget: 'markdown' }        
+  columns:
+    output: true
+  heros:
+    output: true
+
+# Social media
+twitter: twitter
+github: github
+linkedin: linkedin
+facebook: facebook
