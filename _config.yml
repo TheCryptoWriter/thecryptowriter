@@ -1,5 +1,8 @@
-theme: jekyll-theme-architect
+url: "https://davidmcneal28.github.io/thecryptowriter/"
 
-url: "https://example.com"
-gems:
-  =jekyll-sitemap
+defaults:
+  -
+    scope:
+      path: "index.html" # an empty string here means all files in the project
+    values:
+      layout: "default"
