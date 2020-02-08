@@ -1,5 +1,5 @@
 theme: jekyll-theme-architect
 
 url: "https://example.com"
-plugins:
+gems:
   =jekyll-sitemap
