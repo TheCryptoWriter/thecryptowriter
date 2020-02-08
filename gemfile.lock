@@ -258,6 +258,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 204)
+  jekyll
+  jekyll-sitemap
   nokogiri
   rack (~> 2.0.1)
   rspec
