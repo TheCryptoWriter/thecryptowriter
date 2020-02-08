@@ -7,18 +7,17 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-
-title: "The Crypto Writer"
+title: The Crypto Writer
 email: davidmcneal28@gmail.com
-description: The Crypto Writer's Site # this means to ignore newlines until "baseurl:"
-
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://davidmcneal28.github.io/thecryptowriter/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thecryptowriter
@@ -33,44 +32,44 @@ plugins:
 collections_dir: _collections
 
 collections:
-- name: 'authors'
-  label: 'Authors'
-  folder: '_authors/'
-  create: true
-  editor:
-    preview: false
-  fields:
-    - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
-    - { label: 'Short Name', name: 'name', widget: 'string' }
-    - { label: 'Diplay Name', name: 'display_name', widget: 'string' }
-    - { label: 'Position', name: 'position', widget: 'string' }
-    - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  name: 'authors'
+    label: 'Authors'
+    folder: '_authors/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {
-          label: 'Author',
-          name: 'author',
-          widget: 'relation',
-          collection: 'authors',
-          displayFields: [display_name],
-          searchFields: [display_name],
-          valueField: 'name',
-        }
-      - { label: 'Body', name: 'body', widget: 'markdown' }        
-  - columns:
-    output: true
-  - heros:
-    output: true
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
+      - { label: 'Short Name', name: 'name', widget: 'string' }
+      - { label: 'Diplay Name', name: 'display_name', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+    - name: 'blog'
+      label: 'Blog'
+      folder: '_posts/'
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      editor:
+        preview: false
+      fields:
+        - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+        - {
+            label: 'Author',
+            name: 'author',
+            widget: 'relation',
+            collection: 'authors',
+            displayFields: [display_name],
+            searchFields: [display_name],
+            valueField: 'name',
+          }
+        - { label: 'Body', name: 'body', widget: 'markdown' }        
+    - columns:
+      output: true
+    - heros:
+      output: true
 
 # Social media
 twitter: twitter
