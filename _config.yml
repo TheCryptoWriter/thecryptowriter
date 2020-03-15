@@ -13,13 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jekyll Netlify Boilerplate
-email: your-email@example.com
+title: Seo For Life
+email: davidmcneal28@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
-baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
+  This is SEO for ...life
+baseurl: / # the subpath of your site if applicable, e.g. /blog
+url: "https://seofor.life" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
@@ -170,12 +169,6 @@ sidebars:
 - product2_sidebar
 - other
 
-description: "xml feed description"
 # the description is used in the feed.xml file
-
-# needed for sitemap.xml file only
-url: https://seofor.life
-baseurl: /
-
 
 github: [metadata]
