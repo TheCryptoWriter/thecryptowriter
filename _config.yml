@@ -80,8 +80,7 @@ collections:
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
   
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
@@ -91,8 +90,7 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
-  -
-    scope:
+  - scope:
       path: ""
       type: "tooltips"
     values:
@@ -100,8 +98,7 @@ defaults:
       search: true
       tooltip: true
 
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
