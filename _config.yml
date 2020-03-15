@@ -3,7 +3,7 @@ repository: davidmcneal28/thecryptowriter
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-<<<<<<< HEAD
+
 topnav_title: The Crypto Writer
 # this appears on the top navigation bar next to the home button
 
@@ -14,7 +14,7 @@ company_name: The Crypto Writer
 # this appears in the footer
 
 github_editme_path: davidmcneal28/thecryptowriter/blob/gh-pages/
-=======
+
 topnav_title: Seo For . . Life
 # this appears on the top navigation bar next to the home button
 
@@ -25,17 +25,13 @@ company_name: SeoFor.Life
 # this appears in the footer
 
 # github_editme_path: 
->>>>>>> 5c244b9ba90d3281bef8b1db39221efbdaa149ef
+
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-<<<<<<< HEAD
-# google_analytics: 
-=======
-# google_analytics: UA-66296557-1
->>>>>>> 5c244b9ba90d3281bef8b1db39221efbdaa149ef
+google_analytics: 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 host: 127.0.0.1
@@ -48,17 +44,13 @@ exclude:
   - .idea/
   - .gitignore
   - vendor
-# these are the files and directories that jekyll will exclude from the build
 
-<<<<<<< HEAD
+#  these are the files and directories that jekyll will exclude from the build
+
 feedback_subject_line: Feedback
 
 feedback_email: davidmcneal28@gmail.com
-=======
-feedback_subject_line: Link
 
-# feedback_email: davidmcneal28@gmail.com
->>>>>>> 5c244b9ba90d3281bef8b1db39221efbdaa149ef
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
