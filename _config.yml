@@ -1,24 +1,41 @@
-repository: tomjoht/documentation-theme-jekyll
+repository: davidmcneal28/thecryptowriter
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Jekyll Documentation Theme
+<<<<<<< HEAD
+topnav_title: The Crypto Writer
 # this appears on the top navigation bar next to the home button
 
-site_title: Jekyll theme for documentation
+site_title: The Crypto Writer
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Your company
+company_name: The Crypto Writer
 # this appears in the footer
 
-github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
+github_editme_path: davidmcneal28/thecryptowriter/blob/gh-pages/
+=======
+topnav_title: Seo For . . Life
+# this appears on the top navigation bar next to the home button
+
+site_title: Seo For Life
+# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+company_name: SeoFor.Life
+# this appears in the footer
+
+# github_editme_path: 
+>>>>>>> 5c244b9ba90d3281bef8b1db39221efbdaa149ef
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-google_analytics: UA-66296557-1
+<<<<<<< HEAD
+# google_analytics: 
+=======
+# google_analytics: UA-66296557-1
+>>>>>>> 5c244b9ba90d3281bef8b1db39221efbdaa149ef
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 host: 127.0.0.1
@@ -33,9 +50,15 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Jekyll documentation theme
+<<<<<<< HEAD
+feedback_subject_line: Feedback
 
-feedback_email: tomjoht@gmail.com
+feedback_email: davidmcneal28@gmail.com
+=======
+feedback_subject_line: Link
+
+# feedback_email: davidmcneal28@gmail.com
+>>>>>>> 5c244b9ba90d3281bef8b1db39221efbdaa149ef
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -44,7 +67,7 @@ feedback_email: tomjoht@gmail.com
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://seofor.life"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
@@ -61,9 +84,9 @@ kramdown:
 
 collections:
   tooltips:
-    output: false
+  output: true
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
-
+  
 defaults:
   -
     scope:
@@ -97,8 +120,6 @@ defaults:
       sidebar: home_sidebar
       topnav: topnav
 
-# these are defaults used for the frontmatter for these file types
-
 sidebars:
 - home_sidebar
 - mydoc_sidebar
@@ -106,12 +127,12 @@ sidebars:
 - product2_sidebar
 - other
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "xml feed description"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-# url: http://idratherbewriting.com
-# baseurl: /documentation-theme-jekyll
+url: https://seofor.life
+baseurl: /
 
 
 github: [metadata]
