@@ -44,8 +44,6 @@ compress_html:
   clippings: all
 
 collections:
-  - tooltips:
-    output: true
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
   
 # set some common post defaults
@@ -62,25 +60,19 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
-
+      tooltip: true
   - 
     scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
+      section: "page" # set the root section name
       search: true
+      sidebar: home_sidebar
+      topnav: topnav
       tooltip: true
 
-      
-
-# Build settings
-markdown: kramdown
-
-# Kramdown options
-kramdown:
-  # Prevent IDs from being added to h1-h6 tags
-  auto_ids: false
 
 # Include in processing (e.g. Netlify directives)
 # Uncomment before use
@@ -165,7 +157,7 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
  input: GFM
- auto_ids: true
+ auto_ids: false
  hard_wrap: false
  syntax_highlighter: rouge
 
