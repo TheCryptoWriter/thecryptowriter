@@ -94,6 +94,10 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - filename.md
+  - subfolder_name/
+  - mydoc_*
+  - gitignore
 
 
 repository: davidmcneal28/thecryptowriter
