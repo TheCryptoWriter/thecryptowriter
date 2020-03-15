@@ -3,7 +3,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
 collections:
-  - name: 'blog'
+  - 
+    name: 'blog'
     label: 'Blog'
     folder: '_posts/'
     create: true
@@ -24,7 +25,8 @@ collections:
       valueField: 'name',
     }
       - { label: 'Body', name: 'body', widget: 'markdown' }  
-  - name: 'authors'
+  - 
+    name: 'authors'
     label: 'Authors'
     folder: '_authors/'
     create: true
@@ -36,7 +38,8 @@ collections:
       - { label: 'Diplay Name', name: 'display_name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
+  - 
+    name: 'pages'
     label: 'Pages'
     editor:
     preview: false
@@ -48,7 +51,8 @@ collections:
         - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
         - { label: 'Layout', name: 'title', widget: 'hidden', default: 'about' }
         - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: "config"
+  - 
+    name: "config"
     label: "Config"
     editor:
     preview: false
